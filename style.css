@@ -1,0 +1,44 @@
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 0px;
+}
+
+body {
+  display: flex;
+  background-color: grey;
+  color: white;
+  text-align: center;
+}
+
+#controls-container {
+  flex: 1;
+  background-color: #000080;
+  margin: 5vh auto;
+}
+
+span {
+  color: var(--base);
+}
+
+label {
+  font-size: 24px;
+  color: var(--base);
+  display: block;
+}
+
+input {
+  margin: 5vh;
+  display: inline-block;
+}
+
+#image-container {
+  flex: 2;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+  margin: 0 auto;
+}
